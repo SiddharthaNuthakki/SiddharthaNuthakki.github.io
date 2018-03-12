@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Dst Index</title>
+		<!-- // <script type="text/javascript" src="../d3.v3.js"></script> -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	  <style type="text/css">
+
+			html, body, * {
+				font-family: Arial, sans-serif;
+				text-align: center;
+				font-size: 14px 65%;
+			}
+
+			div#title {
+			    width: 880px;
+			    margin: 10px auto 0;
+			    padding: 5px 20px;
+			    background-color: grey;
+			    border: 1px solid grey;
+			    color: white;
+			    box-shadow: 3px 0px 3px grey;
+			}
+
+			h1 {
+			    font-family: Georgia, serif;
+			    font-size: 1.4em;
+			    letter-spacing: 1px;
+			    margin: 0 auto;
+			}
+
+			h2 {
+				font-size: .8em;
+				font-weight:100;
+				margin: .3em auto;
+			}
+
+			div#chart {
+				width:920px;
+				margin: 0 auto 1em;
+				border: 1px solid grey;
+				box-shadow: 3px 3px 3px lightgrey;
+			}
+			
+			div#chart1 {
+				width:920px;
+				margin: 0 auto 1em;
+				border: 1px solid grey;
+				box-shadow: 3px 3px 3px lightgrey;
+			}
+
+			.eachBar.positive {
+			  fill: darkgreen;
+			}
+
+			.eachBar.negative {
+			  fill: orange;
+			}
+
+			g.dstDetails {
+				fill: black;
+			}
+
+			g.dstDetails text,
+			.axis text {
+			  font: 12px sans-serif;
+			  fill:black;
+			}
+
+			.axis path,
+			.axis line {
+			  fill: none;
+			  stroke: #011;
+			  shape-rendering: crispEdges;
+			}
+
+			path.domain {
+				stroke:none;
+			}
+
+		</style>
+	</head>
+	
+	
+	<body>
+		<div id="title">
+			<h1>
+				Visualizing the Disturbance storm time (Dst) index
+			</h1>
+			<h2>On mouse over one can find Dst Index for each day in an year</h2>
+		</div>
+		<!-- <select id="dropDown" onchange="myFunction()">
+		  <option value="1957" selected="selected">1957</option>
+		  <option value="1958">1958</option>
+		  <option value="1959">1959</option>
+		  <option value="audi">Audi</option>
+		</select> -->
+		<div id="chart"></div>
+		<div id="chart1"></div>
+		<div id="chart2"></div>
+		<div id="chart3"></div>
+		<div id="chart4"></div>
+		
+		<script type="text/javascript" src="./dst2017.js"></script>
+		<script type="text/javascript" src="./dst2016.js"></script>
+		<script type="text/javascript" src="./dst2015.js"></script>
+		<script type="text/javascript" src="./dst2014.js"></script>
+		<script type="text/javascript" src="./dst2013.js"></script>
+		
+	</body>
+</html>
